@@ -1,0 +1,103 @@
+#content {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1600px; /* Set your desired max-width here */
+    margin: 0 auto; /* Center the container horizontally on the page */
+    padding: 20px; /* Add some padding to the container if desired */
+}
+
+nav a {
+    text-align: center;
+    color: #fcfbfb;
+    text-decoration: none;
+}
+
+#hero-msg h1, #hero-msg h4, .button-box, main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+    background-color: #b3e0ff; 
+}
+
+body {
+    background-color: #e6f7ff; 
+}
+header {
+    background-color: rgba(0, 102, 204, 0.8);
+}
+nav a:hover {
+    border-top: #009bb3c4; /* Darker Blue on hover for navigation links */
+    color: #ffffff; /* White text on hover for navigation links */
+}
+
+.home-title {
+    color: #4caf50; /* Green for home title */
+}
+
+h4 {
+    color: #333; /* Dark Gray for h4 headings */
+}
+
+.book, .join {
+    color: #ffffff; /* White text for book and join buttons */
+    text-decoration: none;
+}
+
+.book:hover, .join:hover {
+    color: #ffffff; /* White text on hover for buttons */
+}
+
+.msg h2 {
+    color: #333; /* Dark Gray for h2 headings in message section */
+}
+
+.msg p {
+    color: #333; /* Dark Gray for paragraph text in message section */
+}
+
+footer {
+    background-color: #333; /* Dark Gray for footer */
+    color: #fff; /* White text in footer */
+}
+
+footer a {
+    color: #fff; /* White text for footer links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #4caf50; /* Green text on hover for footer links */
+}
+
+.logo {
+    width: 80px;
+}
+
+.icon {
+    width: 80px;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
