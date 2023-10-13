@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
 #content {
     max-width: 1600px;
     width: 100%;
@@ -5,82 +7,132 @@
 }
 
 .container {
-    max-width: 1600px; /* Set your desired max-width here */
-    margin: 0 auto; /* Center the container horizontally on the page */
-    padding: 20px; /* Add some padding to the container if desired */
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 nav a {
     text-align: center;
     color: #fcfbfb;
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg h1, #hero-msg h4, .button-box, main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 #background {
     height: 725px;
-    background-color: #b3e0ff; 
+    background-color: #b3e0ff;
 }
 
 body {
-    background-color: #e6f7ff; 
+    background-color: #e6f7ff;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
+
 header {
     background-color: rgba(0, 102, 204, 0.8);
 }
+
 nav a:hover {
-    border-top: #009bb3c4; /* Darker Blue on hover for navigation links */
-    color: #ffffff; /* White text on hover for navigation links */
+    border-top: 3px solid #009bb3; 
+    color: #ffffff;
 }
 
 .home-title {
-    color: #4caf50; /* Green for home title */
+    color: #4caf50;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
-    color: #333; /* Dark Gray for h4 headings */
+    color: #333;
 }
 
 .book, .join {
-    color: #ffffff; /* White text for book and join buttons */
+    color: #282985;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #d9c2a3;
 }
 
 .book:hover, .join:hover {
-    color: #ffffff; /* White text on hover for buttons */
+    background-color: #5a5858;
 }
 
 .msg h2 {
-    color: #333; /* Dark Gray for h2 headings in message section */
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    margin: 0;
+}
+
+.msg {
+    background-color: #6f7364;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg p {
-    color: #333; /* Dark Gray for paragraph text in message section */
+    color: #333;
+    font-size: 0.8em;
+    padding-bottom: 15px;
 }
 
 footer {
-    background-color: #333; /* Dark Gray for footer */
-    color: #fff; /* White text in footer */
+    background-color: #333;
+    color: #fff;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
-    color: #fff; /* White text for footer links */
+    color: #fff;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #4caf50; /* Green text on hover for footer links */
+    color: #4caf50;
+    text-decoration: underline;
 }
 
 .logo {
     width: 80px;
 }
 
+#logo_link {
+    padding-top: 5px;
+}
+
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
@@ -94,6 +146,11 @@ footer p a:hover {
 footer p {
     font-size: 1.2em;
 }
+
+footer .social img {
+    padding-top: 15px;
+}
+
 
 
 
