@@ -14,6 +14,115 @@ header {
     grid-template-columns: 150px auto;
 }
 
+nav a.button {
+    background-color: #009bb3; /* Button background color */
+    padding: 25px 25px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for the button */
+    color: white; /* Button text color */
+    font-weight: bold; /* Make the text bold */
+    text-transform: uppercase; /* Capitalize text */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+nav a.button:hover {
+    background-color: #007a9b; /* Darker background color on hover */
+    color: #ffffff;
+    text-decoration: none; /* Remove text underline on hover */
+}
+
+@media screen and (max-width: 900px) {
+    nav a.button {
+        display: block; /* Stack buttons on smaller screens */
+        margin: 10px 0; /* Add some margin between stacked buttons */
+    }
+}
+
+.home-grid2 {
+  display: grid;
+  grid-template-columns: repeat(3); /* creates 3 columns */
+  gap: 20px; /* adjust the gap as needed */
+}
+
+.camping-card.card, .rapids-card.card {
+    display: flex;
+    flex-direction: column-reverse; /* For Blog card */
+}
+
+.camping-card.card {
+    grid-column: span 2; /* FAQ card takes full width */
+}
+
+.card {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Stack image and text */
+}
+.card-img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.read-more, .view-all-blogs {
+    background-color: #009bb3;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.read-more:hover, .view-all-blogs:hover {
+    background-color: #007a9b;
+}
+
+.faq-search {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-search input[type="search"] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.faq-search button {
+    padding: 10px;
+    background-color: #009bb3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.faq-search button:hover {
+    background-color: #007a9b;
+}
+
+@media screen and (max-width: 992px) {
+    .home-grid2 {
+        grid-template-columns: 1fr; /* Stack the cards on smaller screens */
+    }
+    .camping-card.card {
+        grid-column: span 1; /* FAQ card takes full width on smaller screens */
+    }
+}
+
+.card-content, .card-content2 {
+    padding: 15px;
+}
+
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -39,6 +148,52 @@ nav a:hover {
 .container {
     padding: 20px;
 }
+
+.hero {
+    background: url('../images/river-wide2.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.hero-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-text h1 {
+    color: #010303;
+    font-size: 2.5em;
+    max-width: 50%;
+}
+
+.hero-text p {
+    color: #ffffff;
+    max-width: 50%;
+}
+
+.hero .learn-more {
+    background-color: #ffffff;
+    color: #007a9b;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.hero .learn-more:hover {
+    background-color: #009bb3; /* Darker background color on hover */
+    color: #ffffff;
+}
+
 
 #hero-msg h1, #hero-msg h4, .button-box, main section {
     text-align: center;
@@ -212,7 +367,7 @@ footer .social img {
 }
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, .home-grid2{
         display: block;
         height: auto;
     }
