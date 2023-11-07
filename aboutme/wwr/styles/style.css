@@ -31,23 +31,15 @@ nav a.button:hover {
     text-decoration: none; /* Remove text underline on hover */
 }
 
-@media screen and (max-width: 900px) {
-    nav a.button {
-        display: block; /* Stack buttons on smaller screens */
-        margin: 10px 0; /* Add some margin between stacked buttons */
-    }
-}
+
 
 .home-grid2 {
-  display: grid;
-  grid-template-columns: repeat(3); /* creates 3 columns */
-  gap: 20px; /* adjust the gap as needed */
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px; /* adjust the gap as needed */
 }
 
-.camping-card.card, .rapids-card.card {
-    display: flex;
-    flex-direction: column-reverse; /* For Blog card */
-}
+
 
 .camping-card.card {
     grid-column: span 2; /* FAQ card takes full width */
@@ -109,7 +101,7 @@ nav a.button:hover {
     background-color: #007a9b;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 900px) {
     .home-grid2 {
         grid-template-columns: 1fr; /* Stack the cards on smaller screens */
     }
@@ -243,7 +235,7 @@ h4 {
 
 .home-grid {
     display: grid;
-    grid-template-columns: repeat(10, 1fr,1fr,1fr);
+    grid-template-columns: repeat(10, 1fr);
 }
 
 .rivers-card, .camping-card, .rapids-card {
@@ -381,21 +373,23 @@ footer .social img {
     #hero {
         margin-top: 0;
     }
-    #hero-msg {
+    #hero-msg, #hero-text{
         margin-top: 0;
     }
-    #hero-msg h4 {
+    #hero-msg h4, #hero-text h1, #hero-text p{
         display: none;
         color: white;
     }
-    .home-title {
+    .home-title{
         font-size: 25px;
         color: #6f7364;
     }
+    
     .rivers-card, .camping-card, .rapids-card { 
         margin: 50px auto;
         width: 60%;
     }
+
     #background {
         display: none;
     }
