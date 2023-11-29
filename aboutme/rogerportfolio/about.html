@@ -1,6 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #e0e0e0;
+        min-height: 100vh;
+      }
+
+  
+      .columns {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+  
+      .column {
+        width: 30%;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+  
+      .column h3 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+      }
+  
+      .column p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.5;
+      }
+  
+      .column ul {
+        list-style: none;
+        font-size: 16px;
+        color: #555;
+        line-height: 1.5;
+      }
+  
+      .column li {
+        margin-bottom: 10px;
+      }
+  
+      .column li:before {
+        content: "\2713";
+        color: #333;
+        margin-right: 10px;
+      }
+    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roger Nunez || About Me</title>
@@ -37,11 +99,28 @@
     </nav>
     <!-- end of navbar -->
     <!-- header -->
-    <header class="hero">
-      <div class="section-center hero-center">
-     
+    <div class="main">
+      <img src="images/about me2.jpeg" alt="Image" class="image">
+      <h1 class="heading">About Me</h1>
+      <div class="columns">
+        <div class="column">
+          <h3>Who I am</h3>
+          <p>Hi, I'm Roger Nunez, a web developer and app developer based in San Francisco. I have over 5 years of experience in creating beautiful and functional websites and apps for various clients and projects.</p>
+        </div>
+        <div class="column">
+          <h3>What I do</h3>
+          <ul>
+            <li>Web development: HTML, CSS, JavaScript, React, Node.js, MongoDB, etc.</li>
+            <li>App development: Flutter, Dart, Firebase, etc.</li>
+            <li>App design: Adobe XD, Figma, Sketch, etc.</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Why I do it</h3>
+          <p>I love coding and designing because it allows me to express my creativity and solve problems. I enjoy learning new technologies and tools and applying them to real-world scenarios. I also like to collaborate with other developers and designers and share my knowledge and skills.</p>
+        </div>
       </div>
-    </header>
+    </div>
     <!-- footer -->
     <footer>
         <p>Personal Site &copy; 2023 - Roger Nunez Montero</p>
